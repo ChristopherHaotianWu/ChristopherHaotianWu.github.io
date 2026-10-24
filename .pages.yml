@@ -1,0 +1,558 @@
+{
+  "content": [
+    {
+      "name": "zh",
+      "label": "中文主页",
+      "type": "file",
+      "path": "_data/zh.json",
+      "format": "json",
+      "fields": [
+        {
+          "name": "name",
+          "label": "姓名 / Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "alternate_name",
+          "label": "另一语言的姓名 / Alternate name",
+          "type": "string"
+        },
+        {
+          "name": "page_title",
+          "label": "浏览器标题 / Page title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "搜索摘要 / Search description",
+          "type": "text"
+        },
+        {
+          "name": "email",
+          "label": "联系邮箱 / Email",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "github",
+          "label": "GitHub 链接",
+          "type": "string"
+        },
+        {
+          "name": "intro",
+          "label": "简介段落 / Introduction",
+          "type": "text",
+          "list": true
+        },
+        {
+          "name": "projects",
+          "label": "项目 / Projects",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "名称 / Title",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "时间或状态 / Date or status",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "副标题 / Subtitle",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            },
+            {
+              "name": "url",
+              "label": "项目网址 / URL",
+              "type": "string",
+              "pattern": "^https://"
+            },
+            {
+              "name": "tags",
+              "label": "标签 / Tags",
+              "type": "string"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "experience",
+          "label": "工作经历 / Experience",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "机构 / Organization",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "起止时间 / Dates",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "职位 / Role",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "research",
+          "label": "研究 / Research",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "项目名称 / Title",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "状态或日期 / Status or dates",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "论文标题 / Paper title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            },
+            {
+              "name": "note",
+              "label": "投稿状态等备注 / Status note",
+              "type": "string"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "education",
+          "label": "教育 / Education",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "学校 / Institution",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "起止时间 / Dates",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "学位和专业 / Degree and subject",
+              "type": "text"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "skills",
+          "label": "技术与工具 / Tools & methods",
+          "type": "text"
+        },
+        {
+          "name": "languages",
+          "label": "语言 / Languages",
+          "type": "text"
+        },
+        {
+          "name": "labels",
+          "label": "界面文字 / Interface labels",
+          "type": "object",
+          "fields": [
+            {
+              "name": "skip",
+              "label": "skip",
+              "type": "string"
+            },
+            {
+              "name": "projects",
+              "label": "projects",
+              "type": "string"
+            },
+            {
+              "name": "experience",
+              "label": "experience",
+              "type": "string"
+            },
+            {
+              "name": "research",
+              "label": "research",
+              "type": "string"
+            },
+            {
+              "name": "education",
+              "label": "education",
+              "type": "string"
+            },
+            {
+              "name": "contact",
+              "label": "contact",
+              "type": "string"
+            },
+            {
+              "name": "selected_projects",
+              "label": "selected_projects",
+              "type": "string"
+            },
+            {
+              "name": "work_experience",
+              "label": "work_experience",
+              "type": "string"
+            },
+            {
+              "name": "research_exploration",
+              "label": "research_exploration",
+              "type": "string"
+            },
+            {
+              "name": "education_background",
+              "label": "education_background",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "label": "email",
+              "type": "string"
+            },
+            {
+              "name": "print",
+              "label": "print",
+              "type": "string"
+            },
+            {
+              "name": "edit",
+              "label": "edit",
+              "type": "string"
+            },
+            {
+              "name": "source",
+              "label": "source",
+              "type": "string"
+            },
+            {
+              "name": "contact_text",
+              "label": "contact_text",
+              "type": "string"
+            },
+            {
+              "name": "skills",
+              "label": "skills",
+              "type": "string"
+            },
+            {
+              "name": "languages",
+              "label": "languages",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "en",
+      "label": "English homepage",
+      "type": "file",
+      "path": "_data/en.json",
+      "format": "json",
+      "fields": [
+        {
+          "name": "name",
+          "label": "姓名 / Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "alternate_name",
+          "label": "另一语言的姓名 / Alternate name",
+          "type": "string"
+        },
+        {
+          "name": "page_title",
+          "label": "浏览器标题 / Page title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "搜索摘要 / Search description",
+          "type": "text"
+        },
+        {
+          "name": "email",
+          "label": "联系邮箱 / Email",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "github",
+          "label": "GitHub 链接",
+          "type": "string"
+        },
+        {
+          "name": "intro",
+          "label": "简介段落 / Introduction",
+          "type": "text",
+          "list": true
+        },
+        {
+          "name": "projects",
+          "label": "项目 / Projects",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "名称 / Title",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "时间或状态 / Date or status",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "副标题 / Subtitle",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            },
+            {
+              "name": "url",
+              "label": "项目网址 / URL",
+              "type": "string",
+              "pattern": "^https://"
+            },
+            {
+              "name": "tags",
+              "label": "标签 / Tags",
+              "type": "string"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "experience",
+          "label": "工作经历 / Experience",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "机构 / Organization",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "起止时间 / Dates",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "职位 / Role",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "research",
+          "label": "研究 / Research",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "项目名称 / Title",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "状态或日期 / Status or dates",
+              "type": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "论文标题 / Paper title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "介绍 / Description",
+              "type": "text"
+            },
+            {
+              "name": "note",
+              "label": "投稿状态等备注 / Status note",
+              "type": "string"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "education",
+          "label": "教育 / Education",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "学校 / Institution",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "起止时间 / Dates",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "学位和专业 / Degree and subject",
+              "type": "text"
+            }
+          ],
+          "list": true
+        },
+        {
+          "name": "skills",
+          "label": "技术与工具 / Tools & methods",
+          "type": "text"
+        },
+        {
+          "name": "languages",
+          "label": "语言 / Languages",
+          "type": "text"
+        },
+        {
+          "name": "labels",
+          "label": "界面文字 / Interface labels",
+          "type": "object",
+          "fields": [
+            {
+              "name": "skip",
+              "label": "skip",
+              "type": "string"
+            },
+            {
+              "name": "projects",
+              "label": "projects",
+              "type": "string"
+            },
+            {
+              "name": "experience",
+              "label": "experience",
+              "type": "string"
+            },
+            {
+              "name": "research",
+              "label": "research",
+              "type": "string"
+            },
+            {
+              "name": "education",
+              "label": "education",
+              "type": "string"
+            },
+            {
+              "name": "contact",
+              "label": "contact",
+              "type": "string"
+            },
+            {
+              "name": "selected_projects",
+              "label": "selected_projects",
+              "type": "string"
+            },
+            {
+              "name": "work_experience",
+              "label": "work_experience",
+              "type": "string"
+            },
+            {
+              "name": "research_exploration",
+              "label": "research_exploration",
+              "type": "string"
+            },
+            {
+              "name": "education_background",
+              "label": "education_background",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "label": "email",
+              "type": "string"
+            },
+            {
+              "name": "print",
+              "label": "print",
+              "type": "string"
+            },
+            {
+              "name": "edit",
+              "label": "edit",
+              "type": "string"
+            },
+            {
+              "name": "source",
+              "label": "source",
+              "type": "string"
+            },
+            {
+              "name": "contact_text",
+              "label": "contact_text",
+              "type": "string"
+            },
+            {
+              "name": "skills",
+              "label": "skills",
+              "type": "string"
+            },
+            {
+              "name": "languages",
+              "label": "languages",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

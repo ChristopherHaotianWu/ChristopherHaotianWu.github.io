@@ -1,0 +1,11 @@
+url: "https://christopherhaotianwu.github.io"
+baseurl: ""
+title: "Haotian Wu"
+timezone: Asia/Shanghai
+exclude:
+  - README.md
+  - DESIGN.md
+  - EDITING.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

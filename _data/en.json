@@ -1,0 +1,133 @@
+{
+  "name": "Haotian Wu",
+  "alternate_name": "吴昊天",
+  "page_title": "Haotian Wu · 吴昊天",
+  "description": "Haotian Wu: robotics, AI products, investment research and selected projects.",
+  "email": "wuhaotianyz@gmail.com",
+  "github": "https://github.com/ChristopherHaotianWu",
+  "intro": [
+    "My background is in mechanical engineering and robotics. I have worked on robotics algorithms, cloud computing and AI products, alongside investment and industry research.",
+    "I currently lead algorithms and software at 腰果智能, a consumer hardware startup. My interests include AI agents, AI for Science, and applications of AI in games and consumer hardware.",
+    "This site collects my projects, research and professional experience."
+  ],
+  "labels": {
+    "skip": "Skip to content",
+    "projects": "Projects",
+    "experience": "Experience",
+    "research": "Research",
+    "education": "Education",
+    "contact": "Contact",
+    "selected_projects": "Selected projects",
+    "work_experience": "Experience",
+    "research_exploration": "Research & exploration",
+    "education_background": "Education",
+    "email": "Email",
+    "print": "CV / Save as PDF",
+    "edit": "Edit website",
+    "source": "Source",
+    "contact_text": "Get in touch about AI, robotics, products or research.",
+    "skills": "Tools & methods",
+    "languages": "Languages"
+  },
+  "projects": [
+    {
+      "title": "Twenty Years of Play",
+      "date": "2026.10",
+      "subtitle": "Game industry research website",
+      "description": "A bilingual exploration of 60 leading games from 2006–2026 across mainland China and English-speaking markets. Uses 19 design hooks to examine core loops and player needs.",
+      "url": "https://twenty-years-of-play.vercel.app/",
+      "tags": "Game research / Product analysis / AI-assisted development"
+    },
+    {
+      "title": "Lanebreaker",
+      "date": "2026.10",
+      "subtitle": "5v5 browser MOBA · Game systems design",
+      "description": "Designed the numerical framework for 16 original heroes, covering attributes, skills, crowd control and AI difficulty. A collaboration exploring small-team game development and social distribution.",
+      "url": "https://lanebreaker-game.vercel.app/",
+      "tags": "Unity 6 / Game balance / Team project"
+    },
+    {
+      "title": "CortexCrawl",
+      "date": "Open source",
+      "subtitle": "Product discovery & data pipelines",
+      "description": "Tracks products on Kickstarter and Product Hunt, connecting collection, deduplication and incremental updates with Feishu Base synchronization.",
+      "url": "https://github.com/ChristopherHaotianWu/CortexCrawl",
+      "tags": "Python / Workflow automation / Feishu"
+    }
+  ],
+  "experience": [
+    {
+      "title": "腰果智能",
+      "date": "2025.02 — Present",
+      "subtitle": "Algorithms & Software Lead",
+      "description": "Lead algorithms and software for an AI zero-gravity rocking chair, spanning firmware requirements, BLE / Wi-Fi communication and app–backend integration. Iterate training plans and engagement based on sensor data and user feedback."
+    },
+    {
+      "title": "Tencent Cloud",
+      "date": "2024.01 — 2024.11",
+      "subtitle": "Compute Product Manager",
+      "description": "Helped plan a server AI assistant from the ground up, covering the knowledge base, agent workflows and model tuning. Worked on cloud server configurations, console usability and international billing."
+    },
+    {
+      "title": "Tencent",
+      "date": "2023.08 — 2024.01",
+      "subtitle": "Game Platform Product Intern",
+      "description": "Researched game studio workflows and planned a game production tools platform. Designed templates and permissions to standardize 17 tool categories."
+    },
+    {
+      "title": "Baidu",
+      "date": "2023.06 — 2023.08",
+      "subtitle": "AI Technology Strategy & Investment Intern",
+      "description": "Researched international foundation models and AIGC applications, supporting strategy for ERNIE Bot and PaddlePaddle and related investment projects."
+    },
+    {
+      "title": "绿洲资本",
+      "date": "2023.02 — 2023.05",
+      "subtitle": "Investment Intern",
+      "description": "Sourced opportunities in AIGC content, interactive storytelling, AI companions and games. Spoke with over 60 founders, researched humanoid robotics, MR games and WebGPU, and supported project evaluation."
+    },
+    {
+      "title": "Tencent Robotics X",
+      "date": "2021.07 — 2022.12",
+      "subtitle": "Robotics Algorithms Intern",
+      "description": "Researched dexterous manipulation and dynamic regrasping using optimal control. Studied technologies, competitors and use cases for elder-care robots."
+    }
+  ],
+  "research": [
+    {
+      "title": "AIchemist",
+      "date": "Under submission",
+      "subtitle": "An evidence-grounded autonomous robotic chemist for reaction development",
+      "description": "Co-author on research at the intersection of AI for Science and robotics. Evidence-grounded LLM agents connect literature retrieval, on-demand computation, experimental planning, robotic execution and feedback.",
+      "note": "Submitted to Nature Chemistry; not yet published."
+    },
+    {
+      "title": "System-One",
+      "date": "Research draft",
+      "subtitle": "Preference-Conditioned Authorization for Autonomous Agents",
+      "description": "Explores an explicitly authorized decision layer for autonomous agents, combining deterministic boundary checks with small-model semantic judgments to distinguish preferences from execution permissions.",
+      "note": "Method and evaluation design; experiments remain to be completed."
+    },
+    {
+      "title": "AI-driven physical character animation",
+      "date": "2022.10 — 2023.01",
+      "subtitle": "",
+      "description": "Reproduced DeepMimic in Unreal Engine, configured training and tuned hyperparameters, and trained humanoid motion-control policies on a Kubernetes cluster.",
+      "note": ""
+    }
+  ],
+  "education": [
+    {
+      "title": "City University of Hong Kong",
+      "date": "2022.08 — 2024.06",
+      "description": "Master’s degree · Mechanical Engineering"
+    },
+    {
+      "title": "Southern University of Science and Technology",
+      "date": "2016.09 — 2022.07",
+      "description": "Bachelor’s degree · Robotics Engineering"
+    }
+  ],
+  "skills": "LLM agents, ROS / ROS2, optimal control, motion planning, Claude Code, Cursor, Dify, n8n",
+  "languages": "Chinese (native); English (fluent, professional working proficiency)"
+}

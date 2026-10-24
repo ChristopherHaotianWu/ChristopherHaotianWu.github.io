@@ -1,0 +1,133 @@
+{
+  "name": "吴昊天",
+  "alternate_name": "Haotian Wu",
+  "page_title": "吴昊天 · Haotian Wu",
+  "description": "吴昊天的个人主页。机器人、AI 产品、投资研究与精选项目。",
+  "email": "wuhaotianyz@gmail.com",
+  "github": "https://github.com/ChristopherHaotianWu",
+  "intro": [
+    "我有机械工程与机器人背景，做过机器人算法、云计算与 AI 产品，也参与投资和行业研究。",
+    "目前在腰果智能负责算法与软件，关注 AI Agent、AI for Science，以及 AI 与游戏、消费硬件的结合。",
+    "这里记录我的项目、研究与工作经历。"
+  ],
+  "labels": {
+    "skip": "跳至正文",
+    "projects": "项目",
+    "experience": "经历",
+    "research": "研究",
+    "education": "教育",
+    "contact": "联系",
+    "selected_projects": "精选项目",
+    "work_experience": "工作与实习经历",
+    "research_exploration": "研究与探索",
+    "education_background": "教育背景",
+    "email": "邮件",
+    "print": "简历 / 保存 PDF",
+    "edit": "编辑网站",
+    "source": "源码",
+    "contact_text": "欢迎交流 AI、机器人、产品与研究。",
+    "skills": "技术与工具",
+    "languages": "语言"
+  },
+  "projects": [
+    {
+      "title": "Twenty Years of Play",
+      "date": "2026.10",
+      "subtitle": "游戏行业研究网站",
+      "description": "拆解 2006—2026 年中国大陆与英语市场的 60 款头部游戏，从核心循环与用户需求出发，用 19 种设计钩子理解游戏的吸引力。支持中英双语。",
+      "url": "https://twenty-years-of-play.vercel.app/",
+      "tags": "游戏研究  /  产品分析  /  AI 辅助开发"
+    },
+    {
+      "title": "Lanebreaker",
+      "date": "2026.10",
+      "subtitle": "5v5 网页 MOBA · 数值体系设计",
+      "description": "负责 16 名原创英雄的数值框架，覆盖属性、技能、控制状态与电脑 AI 的难度参数。与朋友共同探索小团队的游戏开发与社媒分发路径。",
+      "url": "https://lanebreaker-game.vercel.app/",
+      "tags": "Unity 6  /  游戏数值  /  团队项目"
+    },
+    {
+      "title": "CortexCrawl",
+      "date": "开源项目",
+      "subtitle": "产品发现与数据采集流水线",
+      "description": "跟踪 Kickstarter 与 Product Hunt 的产品动态，将采集、去重、差异更新与飞书多维表格同步串联起来，让产品发现成为可持续运行的工作流。",
+      "url": "https://github.com/ChristopherHaotianWu/CortexCrawl",
+      "tags": "Python  /  工作流自动化  /  飞书"
+    }
+  ],
+  "experience": [
+    {
+      "title": "腰果智能",
+      "date": "2025.02 — 至今",
+      "subtitle": "算法及软件负责人",
+      "description": "负责 AI 零重力摇椅的算法与软件，参与固件功能定义、BLE / Wi-Fi 通信及 App、后端协同；结合传感数据与用户反馈，迭代训练计划与打卡激励。"
+    },
+    {
+      "title": "腾讯云",
+      "date": "2024.01 — 2024.11",
+      "subtitle": "算力产品经理",
+      "description": "参与服务器 AI 助手从零到一的规划，负责知识库、Agent 流程与模型调优；推进云服务器产品配置、控制台体验与国际化计费优化。"
+    },
+    {
+      "title": "腾讯",
+      "date": "2023.08 — 2024.01",
+      "subtitle": "游戏平台产品经理实习生",
+      "description": "调研游戏工作室的开发需求，规划游戏管线工具平台；设计工具模板与权限体系，将 17 种工具类型标准化。"
+    },
+    {
+      "title": "百度",
+      "date": "2023.06 — 2023.08",
+      "subtitle": "AI 技术战略与投资实习生",
+      "description": "跟踪海外大模型与 AIGC 应用，为文心一言、飞桨等业务提供战略研究，支持相关投资项目推进。"
+    },
+    {
+      "title": "绿洲资本",
+      "date": "2023.02 — 2023.05",
+      "subtitle": "投资实习生",
+      "description": "围绕 AIGC 内容、互动叙事、AI 陪伴与游戏开展项目扫描，与 60 余位创始人交流；研究人形机器人、MR 游戏与 WebGPU，参与项目评估。"
+    },
+    {
+      "title": "腾讯 Robotics X 实验室",
+      "date": "2021.07 — 2022.12",
+      "subtitle": "机器人算法实习生",
+      "description": "研究灵巧操作与动态重新抓取，将输入约束与边界条件统一建模为最优控制问题；开展养老机器人技术与应用场景调研。"
+    }
+  ],
+  "research": [
+    {
+      "title": "AIchemist",
+      "date": "论文在投",
+      "subtitle": "An evidence-grounded autonomous robotic chemist for reaction development",
+      "description": "论文作者之一。参与 AI for Science 与机器人交叉研究，以可追溯证据驱动 LLM Agent，连接文献检索、按需计算、实验规划、机器人执行与反馈迭代。",
+      "note": "Nature Chemistry 在投，尚未发表。"
+    },
+    {
+      "title": "System-One",
+      "date": "研究草稿",
+      "subtitle": "Preference-Conditioned Authorization for Autonomous Agents",
+      "description": "探索基于用户显式授权的 Agent 决策层，结合确定性边界检查与小模型语义判断，区分用户偏好与执行权限。",
+      "note": "方法设计与训练评估方案阶段，实验待完成。"
+    },
+    {
+      "title": "AI 物理角色动画",
+      "date": "2022.10 — 2023.01",
+      "subtitle": "",
+      "description": "在虚幻引擎中复现 DeepMimic，完成训练配置与超参数调优，使用 Kubernetes 集群训练仿人运动控制策略。",
+      "note": ""
+    }
+  ],
+  "education": [
+    {
+      "title": "香港城市大学",
+      "date": "2022.08 — 2024.06",
+      "description": "机械工程 · 硕士"
+    },
+    {
+      "title": "南方科技大学",
+      "date": "2016.09 — 2022.07",
+      "description": "机器人工程 · 学士"
+    }
+  ],
+  "skills": "LLM Agent、ROS / ROS2、最优控制、运动规划、Claude Code、Cursor、Dify、n8n",
+  "languages": "中文（母语）；英文（流利，可作为工作语言）"
+}

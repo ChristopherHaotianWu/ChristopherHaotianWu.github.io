@@ -1,0 +1,76 @@
+{% assign c = site.data[page.language] %}
+{% if page.language == 'zh' %}{% assign locale = 'zh-CN' %}{% assign route = '/' %}{% else %}{% assign locale = 'en' %}{% assign route = '/en/' %}{% endif %}
+<!doctype html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ c.page_title | escape }}</title>
+  <meta name="description" content="{{ c.description | escape }}">
+  <meta name="theme-color" content="#fcfbf8">
+  <meta property="og:title" content="{{ c.page_title | escape }}">
+  <meta property="og:description" content="{{ c.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{% if page.language == 'zh' %}zh_CN{% else %}en_US{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ route }}">
+  <link rel="canonical" href="{{ site.url }}{{ route }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ c.labels.skip | escape }}</a>
+  <header class="site-header">
+    <a class="site-name" href="{{ route }}">{{ c.name | escape }}</a>
+    <nav aria-label="{% if page.language == 'zh' %}主导航{% else %}Main navigation{% endif %}">
+      <a href="#projects">{{ c.labels.projects | escape }}</a>
+      <a href="#experience">{{ c.labels.experience | escape }}</a>
+      <a href="#research">{{ c.labels.research | escape }}</a>
+    </nav>
+    <div class="language-switch" aria-label="Language / 语言"><a href="/" lang="zh-CN"{% if page.language == 'zh' %} aria-current="page"{% endif %}>中文</a><span aria-hidden="true">/</span><a href="/en/" lang="en"{% if page.language == 'en' %} aria-current="page"{% endif %}>EN</a></div>
+  </header>
+  <main id="main">
+    <section class="introduction" aria-labelledby="intro-title">
+      <h1 id="intro-title">{{ c.name | escape }} <span lang="{% if page.language == 'zh' %}en{% else %}zh-CN{% endif %}">{{ c.alternate_name | escape }}</span></h1>
+      {% for paragraph in c.intro %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
+      <div class="contact-links"><a href="mailto:{{ c.email | escape }}">{{ c.labels.email | escape }}</a><span aria-hidden="true">/</span><a href="{{ c.github | escape }}">GitHub</a><span aria-hidden="true">/</span><button type="button" id="print-resume">{{ c.labels.print | escape }}</button></div>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">{{ c.labels.selected_projects | escape }}</h2>
+      {% for project in c.projects %}<article class="project">
+        <div class="entry-heading"><h3>{% if project.url != blank %}<a href="{{ project.url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</h3><span class="date">{{ project.date | escape }}</span></div>
+        {% if project.subtitle != blank %}<p class="subtitle">{{ project.subtitle | escape }}</p>{% endif %}
+        <p>{{ project.description | escape | newline_to_br }}</p>
+        {% if project.tags != blank %}<p class="tags">{{ project.tags | escape }}</p>{% endif %}
+      </article>{% endfor %}
+    </section>
+    <section id="research" aria-labelledby="research-title">
+      <h2 id="research-title">{{ c.labels.research_exploration | escape }}</h2>
+      {% for item in c.research %}<article class="entry">
+        <div class="entry-heading"><h3>{{ item.title | escape }}</h3><span class="date">{{ item.date | escape }}</span></div>
+        {% if item.subtitle != blank %}<p class="paper-title" lang="en">{{ item.subtitle | escape }}</p>{% endif %}
+        <p>{{ item.description | escape | newline_to_br }}</p>
+        {% if item.note != blank %}<p class="note">{{ item.note | escape }}</p>{% endif %}
+      </article>{% endfor %}
+    </section>
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">{{ c.labels.work_experience | escape }}</h2>
+      {% for item in c.experience %}<article class="entry">
+        <div class="entry-heading"><h3>{{ item.title | escape }}</h3><span class="date">{{ item.date | escape }}</span></div>
+        <p class="subtitle">{{ item.subtitle | escape }}</p>
+        <p>{{ item.description | escape | newline_to_br }}</p>
+      </article>{% endfor %}
+    </section>
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">{{ c.labels.education_background | escape }}</h2>
+      {% for item in c.education %}<article class="entry compact"><div class="entry-heading"><h3>{{ item.title | escape }}</h3><span class="date">{{ item.date | escape }}</span></div><p>{{ item.description | escape }}</p></article>{% endfor %}
+      <div class="skills"><p><strong>{{ c.labels.skills | escape }}</strong> {{ c.skills | escape }}</p><p><strong>{{ c.labels.languages | escape }}</strong> {{ c.languages | escape }}</p></div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">{{ c.labels.contact | escape }}</h2><p>{{ c.labels.contact_text | escape }}</p><p><a href="mailto:{{ c.email | escape }}">{{ c.email | escape }}</a></p></section>
+  </main>
+  <footer><span>© {{ site.time | date: '%Y' }} {{ c.name | escape }}</span><div><a href="https://github.com/ChristopherHaotianWu/ChristopherHaotianWu.github.io">{{ c.labels.source | escape }}</a><span aria-hidden="true">·</span><a href="/admin/">{{ c.labels.edit | escape }}</a></div></footer>
+</body>
+</html>
