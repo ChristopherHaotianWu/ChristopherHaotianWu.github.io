@@ -8,27 +8,8 @@
   "intro": [
     "我有机械工程与机器人背景，做过机器人算法、云计算与 AI 产品，也参与投资和行业研究。",
     "目前在腰果智能负责算法与软件，关注 AI Agent、AI for Science，以及 AI 与游戏、消费硬件的结合。",
-    "这里记录我的项目、研究与工作经历。"
+    "这里记录我的项目、研究和工作经历。"
   ],
-  "labels": {
-    "skip": "跳至正文",
-    "projects": "项目",
-    "experience": "经历",
-    "research": "研究",
-    "education": "教育",
-    "contact": "联系",
-    "selected_projects": "精选项目",
-    "work_experience": "工作与实习经历",
-    "research_exploration": "研究与探索",
-    "education_background": "教育背景",
-    "email": "邮件",
-    "print": "简历 / 保存 PDF",
-    "edit": "编辑网站",
-    "source": "源码",
-    "contact_text": "欢迎交流 AI、机器人、产品与研究。",
-    "skills": "技术与工具",
-    "languages": "语言"
-  },
   "projects": [
     {
       "title": "Twenty Years of Play",
@@ -111,9 +92,7 @@
     {
       "title": "AI 物理角色动画",
       "date": "2022.10 — 2023.01",
-      "subtitle": "",
-      "description": "在虚幻引擎中复现 DeepMimic，完成训练配置与超参数调优，使用 Kubernetes 集群训练仿人运动控制策略。",
-      "note": ""
+      "description": "在虚幻引擎中复现 DeepMimic，完成训练配置与超参数调优，使用 Kubernetes 集群训练仿人运动控制策略。"
     }
   ],
   "education": [
@@ -129,5 +108,24 @@
     }
   ],
   "skills": "LLM Agent、ROS / ROS2、最优控制、运动规划、Claude Code、Cursor、Dify、n8n",
-  "languages": "中文（母语）；英文（流利，可作为工作语言）"
+  "languages": "中文（母语）；英文（流利，可作为工作语言）",
+  "labels": {
+    "skip": "跳至正文",
+    "projects": "项目",
+    "experience": "经历",
+    "research": "研究",
+    "education": "教育",
+    "contact": "联系",
+    "selected_projects": "精选项目",
+    "work_experience": "工作与实习经历",
+    "research_exploration": "研究与探索",
+    "education_background": "教育背景",
+    "email": "邮件",
+    "print": "简历 / 保存 PDF",
+    "edit": "编辑网站",
+    "source": "源码",
+    "contact_text": "欢迎交流 AI、机器人、产品与研究。",
+    "skills": "技术与工具",
+    "languages": "语言"
+  }
 }
