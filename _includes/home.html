@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ c.page_title | escape }}</title>
   <meta name="description" content="{{ c.description | escape }}">
-  <meta name="theme-color" content="#fcfbf8">
+  <meta name="theme-color" content="#fdfdfc">
   <meta property="og:title" content="{{ c.page_title | escape }}">
   <meta property="og:description" content="{{ c.description | escape }}">
   <meta property="og:type" content="website">
@@ -21,21 +21,25 @@
   <link rel="stylesheet" href="/styles.css">
   <script src="/script.js" defer></script>
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">{{ c.labels.skip | escape }}</a>
   <header class="site-header">
     <a class="site-name" href="{{ route }}">{{ c.name | escape }}</a>
     <nav aria-label="{% if page.language == 'zh' %}主导航{% else %}Main navigation{% endif %}">
+      <a href="#about" aria-current="location">{% if page.language == 'zh' %}关于{% else %}About{% endif %}</a>
       <a href="#projects">{{ c.labels.projects | escape }}</a>
-      <a href="#experience">{{ c.labels.experience | escape }}</a>
       <a href="#research">{{ c.labels.research | escape }}</a>
+      <a href="#experience">{{ c.labels.experience | escape }}</a>
+      <a href="#education">{{ c.labels.education | escape }}</a>
+      <a href="#contact">{{ c.labels.contact | escape }}</a>
     </nav>
     <div class="language-switch" aria-label="Language / 语言"><a href="/" lang="zh-CN"{% if page.language == 'zh' %} aria-current="page"{% endif %}>中文</a><span aria-hidden="true">/</span><a href="/en/" lang="en"{% if page.language == 'en' %} aria-current="page"{% endif %}>EN</a></div>
   </header>
   <main id="main">
-    <section class="introduction" aria-labelledby="intro-title">
+    <section id="about" class="introduction" aria-labelledby="intro-title">
       <h1 id="intro-title">{{ c.name | escape }} <span lang="{% if page.language == 'zh' %}en{% else %}zh-CN{% endif %}">{{ c.alternate_name | escape }}</span></h1>
       {% for paragraph in c.intro %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
+      {% if c.projects.size > 0 %}<div class="project-mentions" aria-label="{{ c.labels.selected_projects | escape }}"><span class="mentions-label">{% if page.language == 'zh' %}最近的作品{% else %}Selected work{% endif %}</span><div class="project-chips">{% for project in c.projects %}{% if project.url != blank %}<a class="project-chip" href="{{ project.url | escape }}"><span class="project-dot dot-{{ forloop.index0 | modulo: 3 }}" aria-hidden="true"></span>{{ project.title | escape }}<span class="chip-arrow" aria-hidden="true">↗</span></a>{% endif %}{% endfor %}</div></div>{% endif %}
       <div class="contact-links"><a href="mailto:{{ c.email | escape }}">{{ c.labels.email | escape }}</a><span aria-hidden="true">/</span><a href="{{ c.github | escape }}">GitHub</a><span aria-hidden="true">/</span><button type="button" id="print-resume">{{ c.labels.print | escape }}</button></div>
     </section>
     <section id="projects" aria-labelledby="projects-title">
@@ -44,7 +48,7 @@
         <div class="entry-heading"><h3>{% if project.url != blank %}<a href="{{ project.url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</h3><span class="date">{{ project.date | escape }}</span></div>
         {% if project.subtitle != blank %}<p class="subtitle">{{ project.subtitle | escape }}</p>{% endif %}
         <p>{{ project.description | escape | newline_to_br }}</p>
-        {% if project.tags != blank %}<p class="tags">{{ project.tags | escape }}</p>{% endif %}
+        {% if project.tags != blank %}<p class="tags">{% assign tags = project.tags | split: '/' %}{% for tag in tags %}<span>{{ tag | strip | escape }}</span>{% endfor %}</p>{% endif %}
       </article>{% endfor %}
     </section>
     <section id="research" aria-labelledby="research-title">
