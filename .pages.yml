@@ -84,7 +84,12 @@
               "type": "string"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "experience",
@@ -113,7 +118,12 @@
               "type": "text"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "research",
@@ -147,7 +157,12 @@
               "type": "string"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "education",
@@ -171,7 +186,12 @@
               "type": "text"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "skills",
@@ -361,7 +381,12 @@
               "type": "string"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "experience",
@@ -390,7 +415,12 @@
               "type": "text"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "research",
@@ -424,7 +454,12 @@
               "type": "string"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "education",
@@ -448,7 +483,12 @@
               "type": "text"
             }
           ],
-          "list": true
+          "list": {
+            "collapsible": {
+              "collapsed": true,
+              "summary": "{title}"
+            }
+          }
         },
         {
           "name": "skills",
